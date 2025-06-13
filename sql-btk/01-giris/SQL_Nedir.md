@@ -1,6 +1,7 @@
 # SQL Nedir?
 
-SQL (Structured Query Language) - Yapısal Sorgulama Dili
+**SQL (Structured Query Language)**
+ - Yapısal Sorgulama Dili
  Veritabanı yönetimi ve veri sorgulama için kullanılan standart bir dildir.
 
 ## Neden SQL?
