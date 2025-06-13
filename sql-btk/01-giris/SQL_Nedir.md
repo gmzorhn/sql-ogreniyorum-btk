@@ -1,6 +1,13 @@
 # SQL Nedir?
 
-SQL (Structured Query Language), veritabanı yönetimi ve veri sorgulama için kullanılan standart bir dildir.
+SQL (Structured Query Language) - Yapısal Sorgulama Dili
+ Veritabanı yönetimi ve veri sorgulama için kullanılan standart bir dildir.
+
+## Neden SQL?
+
+- Veritabanı yönetimi için standart dildir.
+- Microsoft SQL Server, MySQL, PostgreSQL, Oracle gibi sistemlerde kullanılır.
+- Tablolarla çalışır, verileri sorgulamak ve yönetmek için kullanılır.
 
 ## SQL Ne İşe Yarar?
 
@@ -17,6 +24,15 @@ SQL (Structured Query Language), veritabanı yönetimi ve veri sorgulama için k
 - `DELETE`: Veri silmek için
 - `UPDATE`: Veri güncellemek için
 - `CREATE TABLE`: Yeni tablo oluşturmak için
+
+## İlişkisel Veritabanı Nedir?
+
+İlişkisel veritabanları (RDBMS) verileri tablolar halinde tutar, ilişkiler kurar ve veri tekrarını azaltır.
+
+Örnek:
+- `Customers` tablosu
+- `Orders` tablosu
+- `Products` tablosu
 
 ## BTK Derslerinden Notlar
 
