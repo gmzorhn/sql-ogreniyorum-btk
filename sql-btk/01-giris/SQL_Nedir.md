@@ -60,12 +60,15 @@ Orderline:
 -Nettotal
 -Total
 
-Veritabanı Yönetim Sistemleri
-1. Microsoft SQl Server (t-sql)
-2. Oracle (pl sql)
-3. MySQL
-4. PostgreSQL
-5. IBM DB2
+## Veritabanı Yönetim Sistemleri
+
+| Sistem               | Açıklama       |
+| -------------------- | -------------- |
+| Microsoft SQL Server | T-SQL kullanır |
+| Oracle               | PL/SQL         |
+| MySQL                |                |
+| PostgreSQL           |                |
+| IBM DB2              |                |
 
 # SQL Server
 
