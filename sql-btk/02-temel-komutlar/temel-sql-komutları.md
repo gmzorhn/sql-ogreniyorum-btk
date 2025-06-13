@@ -27,7 +27,9 @@ USE DENEME
 SELECT ID,CUSTOMERNAME
 FROM
 CUSTOMERS
+
 **VEYA**
+
 USE DENEME
 SELECT * FROM
 CUSTOMERS
@@ -110,7 +112,6 @@ SET Age = DATEDIFF(YEAR, Birthdate, GETDATE());
 
 ## DELETE
 - Kayıt siler.
-
 ```SQL
 DELETE FROM Customers
 WHERE ID = 18;
@@ -118,7 +119,6 @@ WHERE ID = 18;
 
 ## TRUNCATE
 - Tablonun tüm verilerini siler. iLK HALİNE DÖNER. 
-
 ```SQL
 TRUNCATE TABLE Customers;
 ```
@@ -152,20 +152,20 @@ WHERE Age BETWEEN 20 AND 30;
 ```
 **LIKE** :İLE BAŞLAR, İLE BİTER,İÇERİR
 
-ÖR: WHERE CUSTOMERNAME LIKE 'ÖMER%'
+```sql WHERE CUSTOMERNAME LIKE 'ÖMER%'```
 - ismi ömer ile başlayanlar.
-ÖR: WHERE CUSTOMERNAME LIKE '%ORHAN'
+```sql WHERE CUSTOMERNAME LIKE '%ORHAN'```
 - ismi orhan ile biter.
-ÖR: WHERE CUSTOMERNAME LIKE '%ÖMER%'
+```sql WHERE CUSTOMERNAME LIKE '%ÖMER%'```
 -isminin içinde ömer geçenler
 ```sql
 WHERE City IN ('İstanbul', 'Ankara');
 ```
 NOT LIKE :İLE BAŞLAMAZ, İLE BİTMEZ,İÇERMEZ
-ÖR: WHERE CUSTOMERNAME NOT LIKE 'ÖMER%'
+```sql WHERE CUSTOMERNAME NOT LIKE 'ÖMER%'```
 
 NOT IN : İÇİNDE DEĞİLDİR.
-ÖR: WHERE CITY NOT IN ('İSTANBUL','BURSA')
+```sql WHERE CITY NOT IN ('İSTANBUL','BURSA')```
 
 ```sql
 SELECT * FROM CUSTOMERS
@@ -185,9 +185,9 @@ WHERE NOT CITY='İstanbul'
 
 ```sql
 WHERE BIRTHDATE>'1990-01-01'
+OR: '19900101'
 ```
-VEYA BU ŞEKİLDE YAZILMASI DAHA İYİ OLACAKTIR:
-'19900101' -> 1990'DAN BÜYÜK OLAN TARİHLER GELİYOR.
+VEYA BU ŞEKİLDE YAZILMASI DAHA İYİ OLACAKTIR: 1990'DAN BÜYÜK OLAN TARİHLER GELİYOR.
 
 ```sql
 WHERE BIRTHDATE BETWEEN '19900101' AND '19981231'
@@ -235,7 +235,7 @@ DELETE FROM CUSTOMERS WHERE ID=18
 - SATIR SİLİNİYOR.
 
 ## INSERT Formülü (Excel'den Veri Aktarmak İçin)
-
+```sql
 ="INSERT INTO Customers(CUSTOMERNAME,CITY,DISTRICT,BIRTHDATE,GENDER) VALUES('"&A2&"','"&B2&"','"&C2&"','"&D2&"','"&E2&"')"
-
+```
 - Excel’de 1000 kişilik veri varsa bu yöntemle SQL kodları üretilebilir.
