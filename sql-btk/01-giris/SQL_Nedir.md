@@ -39,7 +39,8 @@ VALUES ('OMER', 'COLAKOGLU')
 
 İlişkisel veritabanları (RDBMS) verileri tablolar halinde tutar, ilişkiler kurar ve veri tekrarını azaltır.
 
-Orderfiche
+Orderfiche:
+
 -Paymenttype:kredi kartı (1)
 -CustomerID 
 -Deliveryttype
@@ -48,7 +49,8 @@ Orderfiche
 -Totalvat
 -Totalprice
 
-Orderline
+Orderline: 
+
 -ID
 -ITEMID
 -Amount
@@ -79,7 +81,7 @@ Client-Server Mimarisi nasıl çalışır?
 İlişkisel Veritabanı:
 Veritabanı Yönetim Sistemi yazılımları hangileridir?
 
-SQL server
+# SQL Server
 
 SSMS: SQL Server Management Studio
 SSIS: Integration Services
@@ -91,7 +93,7 @@ SSAS: Analysis Services
 - İlk tablo SSMS üzerinden veya T-SQL komutlarıyla oluşturulur.
 - SQL Server sadece T-SQL komutları ile çalışır (arka planda).
 
-Sanalallaştırma:
+# Sanalallaştırma:
 VNWare?
 -Nasıl kurulur?
 -üzerinde sanal bir işletim sistemi nasıl kurulur?
@@ -107,4 +109,3 @@ SQL KURULDU İLK DATABASE TABLE YAPILDI:
 - sql server üzerinde tablo oluşturma
 - management studio üzerinden tabloya kayıt girme
 - sql server'ın geri planda sadece tsql komutları çalıştırıyor olması. 
-- 
