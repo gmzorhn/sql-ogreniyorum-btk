@@ -75,12 +75,13 @@ VALUES
 
 - BU ŞEKİLDE OLUNCA HATA VERİR. ÇÜNKÜ 5 YANİ ID ZATEN OTOMATİK OLARAK GELİYOR ÇÜNKÜ SATIR SAYISINI SİSTEM BİLİYOR. HEM INSERT KISMINDAKİ ID ÇIKACAK HEM DE VALUE KISMINDAKİ 5 ÇIKACAK O ZAMAN ÇALIŞIR. 
 
-**ŞİMDİ EXCEL TABLOSUNA GİDİYORUZ**
-EXCEL'DE customername, cıty, dıstrıct, bırhdate, gender değerleri var. 1000 kişilik bir tablo düşünelim. bunları INSERT EDECEĞİZ.
-EXCEL DE FORMÜL:
-ilk satır  
+
+## INSERT Formülü (Excel'den Veri Aktarmak İçin)
+
+EXCEL'DE customername, cıty, dıstrıct, bırhdate, gender değerleri var. - Excel’de 1000 kişilik veri varsa bu yöntemle SQL kodları üretilebilir. Bunları INSERT EDECEĞİZ.
+EXCEL DE FORMÜL: ilk satır  
 ```sql
-="INSERT INTO CUSTOMERS(CUSTOMERNAME,CITY,DISTRICT,BIRTHDATE,GENDER) VALUES('"&A2&"',...)"
+="INSERT INTO CUSTOMERS(CUSTOMERNAME,CITY,DISTRICT,BIRTHDATE,GENDER) VALUES('"&A2&"','"&B2&"','"&C2&"','"&D2&"','"&E2&"')"
 ```
 -tek tırnak çift tırnak hücresini seç değer olsun.
 
@@ -233,9 +234,3 @@ SELECT * FROM CUSTOMERS WHERE ID=18
 DELETE FROM CUSTOMERS WHERE ID=18 
 ```
 - SATIR SİLİNİYOR.
-
-## INSERT Formülü (Excel'den Veri Aktarmak İçin)
-```sql
-="INSERT INTO Customers(CUSTOMERNAME,CITY,DISTRICT,BIRTHDATE,GENDER) VALUES('"&A2&"','"&B2&"','"&C2&"','"&D2&"','"&E2&"')"
-```
-- Excel’de 1000 kişilik veri varsa bu yöntemle SQL kodları üretilebilir.
