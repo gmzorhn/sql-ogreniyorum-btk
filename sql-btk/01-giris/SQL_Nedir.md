@@ -67,20 +67,6 @@ Veritabanı Yönetim Sistemleri
 4. PostgreSQL
 5. IBM DB2
 
-## BTK Derslerinden Notlar
-
-- SQL ilişkisel veritabanlarında kullanılır.
-- İlk derslerde SELECT ile veri çekmeyi öğrendik.
-- SQL büyük harflerle yazılsa da küçük harf de kabul eder.
-
-## Bu sorulara yanıt verebilir misin?
-SQL: 
-Veritabanı Yönetim Sistemi:
-Veritabanı Sunucusu:
-Client-Server Mimarisi nasıl çalışır?
-İlişkisel Veritabanı:
-Veritabanı Yönetim Sistemi yazılımları hangileridir?
-
 # SQL Server
 
 SSMS: SQL Server Management Studio
@@ -109,3 +95,17 @@ SQL KURULDU İLK DATABASE TABLE YAPILDI:
 - sql server üzerinde tablo oluşturma
 - management studio üzerinden tabloya kayıt girme
 - sql server'ın geri planda sadece tsql komutları çalıştırıyor olması. 
+
+## BTK Derslerinden Notlar
+
+- SQL ilişkisel veritabanlarında kullanılır.
+- İlk derslerde SELECT ile veri çekmeyi öğrendik.
+- SQL büyük harflerle yazılsa da küçük harf de kabul eder.
+
+## Bu sorulara yanıt verebilir misin?
+SQL: 
+Veritabanı Yönetim Sistemi:
+Veritabanı Sunucusu:
+Client-Server Mimarisi nasıl çalışır?
+İlişkisel Veritabanı:
+Veritabanı Yönetim Sistemi yazılımları hangileridir?
