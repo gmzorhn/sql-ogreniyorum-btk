@@ -234,3 +234,98 @@ SELECT * FROM CUSTOMERS WHERE ID=18
 DELETE FROM CUSTOMERS WHERE ID=18 
 ```
 - SATIR SİLİNİYOR.
+- 
+
+### AND / OR Operatörleri
+
+**Birden fazla koşul ile filtreleme yaparız.**
+
+#### Örnek:
+
+```sql
+WHERE CITY = 'İstanbul' AND DISTRICT = 'Üsküdar' OR DISTRICT = 'Sarıyer'
+```
+Mantıksal Yapılar:
+CITY	AGE	Sonuç
+İstanbul	30	✅ Doğru
+Bursa	30	❌ Yanlış
+İstanbul	25	❌ Yanlış
+İstanbul	30	✅ Doğru (OR)
+İstanbul	25	✅ Doğru (OR)
+
+AND ile Örnek:
+```sql
+WHERE CITY = 'İstanbul' AND GENDER = 'ERKEK' AND DISTRICT = 'Esenler'
+```
+Tüm koşullar sağlanmalı. Aksi takdirde veri gelmez.
+
+OR ile Örnek:
+```sql
+WHERE DISTRICT = 'Esenler' OR DISTRICT = 'Beylikdüzü'
+```
+Her iki ilçeden biri varsa kayıt getirilir.
+
+NOT:
+```sql
+WHERE CITY = 'İstanbul' AND DISTRICT = 'Beylikdüzü' AND DISTRICT = 'Esenler'
+```
+Bu koşul sağlanamaz çünkü bir kişi aynı anda iki ilçede olamaz.
+
+🧹 DISTINCT Komutu
+- Tekrarlayan kayıtları filtreler.
+
+```sql
+SELECT DISTINCT CITY FROM CUSTOMERS
+```
+Her şehir sadece bir kez listelenir.
+
+```sql
+SELECT DISTINCT CITY, DISTRICT FROM CUSTOMERS
+WHERE CITY = 'İstanbul'
+```
+İstanbul’daki ilçeler tekrarsız olarak listelenir.
+
+📊 ORDER BY Komutu
+- Sıralama yapar.
+
+**ASC: Küçükten büyüğe (varsayılan).**
+**DESC: Büyükten küçüğe.**
+
+```sql
+SELECT * FROM CUSTOMERS
+ORDER BY ID DESC
+```
+ID’leri büyükten küçüğe sıralar.
+
+```sql
+SELECT * FROM CUSTOMERS
+ORDER BY CITY ASC, CUSTOMERNAME DESC
+```
+Şehirleri A’dan Z’ye, aynı şehirdeki isimleri Z’den A’ya sıralar.
+
+Kısa Kullanım:
+```sql
+ORDER BY 3
+```
+Kolona göre sıralar.
+
+🔝 TOP Komutu
+- Belirli sayıda kayıt getirir.
+
+```sql
+SELECT TOP 4 * FROM CUSTOMERS
+```
+İlk 4 satırı getirir.
+
+```sql
+SELECT TOP 4 * FROM CUSTOMERS
+ORDER BY ID
+```
+ID’ye göre sıralanmış ilk 4 kaydı getirir.
+
+```sql
+SELECT TOP 100 PERCENT * FROM CUSTOMERS
+```
+Tüm kayıtları getirir. (Nadiren kullanılır.)
+
+
