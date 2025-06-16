@@ -256,13 +256,13 @@ WHERE CITY = 'İstanbul' AND DISTRICT = 'Üsküdar' OR DISTRICT = 'Sarıyer'
 | İstanbul | 30  | ✅ Doğru   |
 | İstanbul | 25  | ✅ Doğru   |
 
-###AND ile Örnek:
+### AND ile Örnek:
 ```sql
 WHERE CITY = 'İstanbul' AND GENDER = 'ERKEK' AND DISTRICT = 'Esenler'
 ```
 Tüm koşullar sağlanmalı. Aksi takdirde veri gelmez.
 
-###OR ile Örnek:
+### OR ile Örnek:
 ```sql
 WHERE DISTRICT = 'Esenler' OR DISTRICT = 'Beylikdüzü'
 ```
@@ -274,7 +274,7 @@ WHERE CITY = 'İstanbul' AND DISTRICT = 'Beylikdüzü' AND DISTRICT = 'Esenler'
 ```
 Bu koşul sağlanamaz çünkü bir kişi aynı anda iki ilçede olamaz.
 
-##🧹 DISTINCT Komutu
+## 🧹 DISTINCT Komutu
 - Tekrarlayan kayıtları filtreler.
 
 ```sql
@@ -288,7 +288,7 @@ WHERE CITY = 'İstanbul'
 ```
 İstanbul’daki ilçeler tekrarsız olarak listelenir.
 
-##📊 ORDER BY Komutu
+## 📊 ORDER BY Komutu
 - Sıralama yapar.
 
 **ASC: Küçükten büyüğe (varsayılan).**
@@ -312,7 +312,7 @@ ORDER BY 3
 ```
 - Kolona göre sıralar.
 
-##🔝 TOP Komutu
+## 🔝 TOP Komutu
 - Belirli sayıda kayıt getirir.
 
 ```sql
