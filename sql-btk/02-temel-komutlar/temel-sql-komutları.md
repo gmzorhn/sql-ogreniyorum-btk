@@ -332,3 +332,13 @@ SELECT TOP 100 PERCENT * FROM CUSTOMERS
 - Tüm kayıtları getirir. (Nadiren kullanılır.)
 
 
+
+**BU SORULARA YANIT VEREBİLİYOR MUSUN?**
+- SQL komutları nelerdir
+- Data manipülasyon ve Veritabanı manipülasyon komutları nedir
+- Truncate ile Delete farkı
+Select, Insert, Update, Delete, Where şartı
+- =,<,>,<>, like, between
+- Where şartında and ve or
+- Dıstınct
+- Top komutu
