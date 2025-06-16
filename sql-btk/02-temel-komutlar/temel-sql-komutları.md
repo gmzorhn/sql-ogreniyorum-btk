@@ -280,13 +280,13 @@ Bu koşul sağlanamaz çünkü bir kişi aynı anda iki ilçede olamaz.
 ```sql
 SELECT DISTINCT CITY FROM CUSTOMERS
 ```
-Her şehir sadece bir kez listelenir.
+- Her şehir sadece bir kez listelenir.
 
 ```sql
 SELECT DISTINCT CITY, DISTRICT FROM CUSTOMERS
 WHERE CITY = 'İstanbul'
 ```
-İstanbul’daki ilçeler tekrarsız olarak listelenir.
+- İstanbul’daki ilçeler tekrarsız olarak listelenir.
 
 ## 📊 ORDER BY Komutu
 - Sıralama yapar.
